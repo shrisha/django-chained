@@ -99,7 +99,6 @@ class QuestionViewTests(TestCase):
             response.context['latest_question_list'],
             ['<Question: Past question 2.>', '<Question: Past question 1.>']
         )
-<<<<<<< HEAD
 
 class QuestionIndexDetailTests(TestCase):
     def test_detail_view_with_a_future_question(self):
@@ -124,6 +123,3 @@ class QuestionIndexDetailTests(TestCase):
                                    args=(past_question.id,)))
         self.assertContains(response, past_question.question_text,
                             status_code=200)
-
-=======
->>>>>>> efa8890ce9951a20df7539c4b323ccaafba7afec
